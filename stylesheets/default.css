@@ -16,12 +16,18 @@ header {
     width: 100%;
     z-index: 1;
 }
-header img {
+#headshot {
 	position: absolute;
-    float: left;
-    width: 35%;
+    width: 12em;
     margin: 5px;
     height: 120px;
+    left: 100px;
+
+}
+#linkedin {
+    position:absolute;
+    width: 3em;
+    height: 3em;
 }
 h1 {
 	font-size: 70px;

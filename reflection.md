@@ -1,4 +1,4 @@
-[Kim Allen's tech site](http://www.kimallen.github.io)
+[Kim Allen's tech site](http://kimallen.github.io)
 
 
 What did you learn about CSS padding, borders, and margin by doing this challenge?

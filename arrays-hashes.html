@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+	    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+		<title> Kim Allen's Blog- Launching from Zero </title>
+	</head>	
+	<body>
+		<header> 
+			<h1>Launching from Zero</h1>
+			<h3>Adventures in Beginning Web Development</h3>
+			<!--<img src="../imgs/wonderland hiking forward.jpg" alt="backpacking adventure photo" id="blog-header-image" />-->
+
+		</header>
+		<section>
+			<H2>There's lists and then there's lists</H2>
+			<h4>September 13, 2015</h4>
+			<p>When writing a program, you often will come across lists of things that you want to reference.  There are two great formats for keeping these lists: arrays and hashes.  Here’s the difference between arrays and hashes.</p>
+
+			<p>You know how sometimes when you go to an Asian restaurant, each menu item is numbered?  That is one big list, or array.  Each item can be referenced by it’s own unique number. Let’s say that the reason they are numbered is to make it easier for wait staff to write down what you want (though it’s probably as much so people like me can ask for what they want without butchering the name).
+			At the restaurant, you may see a menu that looks like this:</p>
+			<ul>
+				<li>Menu</li>
+				<li>0. Spring roll</li>
+				<li>1.  Pad see-uw</li>
+				<li>2. Thai iced tea</li>
+				<li>3. Fried ice-cream</li>
+			<ul>
+			<p>(I know, I started with 0, but I’ll explain soon, and yes, I know this restaurant menu is very tiny)
+			Here’s how you would record the array in Ruby:</p>
+
+			<p>menu = [ “egg roll”, “Pad see-uw”, “Thai iced tea”, “fried ice-cream”]</p>
+
+			<p>Where’s the numbers, you ask?  The numbers are implied, and indexed from left to right.  The potentially confusing thing in programming, though, is that lists are indexed starting with 0.  So the numbers assigned above are the same assignments in “menu” in the code line.  I could ask for everything on the menu, or I could ask for individual items.  I could say, “I’d like #0 and #2” and you would get the spring roll and an iced tea.  In Ruby, you could say menu[1][3] and you would get the same.</p>
+
+			<p>A hash is also a list.  Think about a menu whose items are not numbered.  You could list the items (values) or give them a reference name (key).  Say I want to order the full menu as above.  Rather than listing them by number, I could label them with something more descriptive:</p>
+			<ul>
+				<li>Main: Pad see uw</li>
+				<li>Drink: Thai iced tea</li>
+				<li>Dessert: Fried ice-cream</li>
+			<ul>
+
+			<p>In Ruby, it could look like this (there are several ways to write it):
+			menu = {“appetizer” => “spring roll”, “main” => “Pad see uw”, “drink” => “Thai iced tea”, “dessert” => “fried ice-cream”}</p>
+
+			<p>Arrays are helpful to use when you have a list that has a specific order (like the words in a sentence, the sentence being the list).  A hash is helpful when your list doesn’t necessarily have a specific order but you still want to keep track of them (like translations of words in English to Spanish).</p>
+			
+		</section>
+			<nav>
+				<ul>
+					<li><a href="blog-index.html">Blog Home</a></li>
+        			<li><a href="t1-git-blog.html">0.1 Git and Github</a></li>
+        			<li><a href="css-concepts.html">0.2 Framing in CSS</a></li>
+					<li><a href="arrays-hashes.html">0.3 There's lists and then there's lists</a></li>
+					<li><a href="#">Blog 4</a></li>
+					<li><a href="#">Blog 5</a></li>
+					<li><a href="#">Blog 6</a></li>
+					<li><a href="#">Blog 7</a></li>
+				</ul>
+			</nav>
+		
+		<footer>Copyright all rights reserved</footer>
+	</body>
+</html>

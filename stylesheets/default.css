@@ -73,11 +73,11 @@ nav {
     box-sizing: border-box;
     top: 140px;
 }
-ul {
+nav ul {
 	list-style-type: none;
     position: absolute;
 }
-ul li {
+nav ul li {
 	border: 2px solid #a46b6a;
     margin: 10px auto;
     padding: 5px;

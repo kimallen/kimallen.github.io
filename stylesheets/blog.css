@@ -1,6 +1,6 @@
 
-body{
-
+html{
+	background-color: white;
 }
 header {
 
@@ -35,13 +35,12 @@ nav {
 	display: inline-block;
 	float:right;
 	height: 365px;
-	
-}
-li a:link {
+	}
+a:link {
 	color: #295739;
 }
 
-li a:visited {
+a:visited {
 	color:#74f09d;
 }
 

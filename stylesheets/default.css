@@ -24,11 +24,11 @@ header {
     left: 100px;
 
 }
-#linkedin {
+/*#linkedin {
     position:absolute;
     width: 3em;
     height: 3em;
-}
+}*/
 h1 {
 	font-size: 70px;
     font-family: monospace;
@@ -92,13 +92,29 @@ footer {
     padding:20px, auto;
 }
 footer ul{
-    display:block;
+    display:inline-block;
+    height:50px;
 }
-footer ul li img{
+table {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr td {
+    margin: auto 25px;
+}
+
+table img {
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*footer ul li img{
     display: inline-block;
     max-height:50;
     width:50;
-}
+}*/
 h6:first-child {
 	font-size: large;
     margin: 5px;

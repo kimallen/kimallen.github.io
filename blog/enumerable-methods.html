@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+	    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+		<title> Kim Allen's Blog- Launching from Zero </title>
+	</head>	
+	<body>
+		<header> 
+			<h1>Launching from Zero</h1>
+			<h3>Adventures in Beginning Web Development</h3>
+			<!--<img src="../imgs/wonderland hiking forward.jpg" alt="backpacking adventure photo" id="blog-header-image" />-->
+
+		</header>
+		<section>
+			<H2>Mapping out the Enumerable Module's Method "map"</H2>
+			<h4>September 20, 2015</h4>
+			<p>Say I borrow your car.  I decide to spruce it up so I put a star on the hood, a star on the roof, and a star on each door.  When I return it to you, I can either return it the way I got it (each), return the same car to you with the adjustments (map!) or decide not to change your car at all but get a duplicate car and paint the stars on that car and return the new car to you (map).</p>
+
+<p>In Ruby, .map and .each are both methods to go through each item in a list (an array) and do something to it.   The list in the example is called “car,” and the items in the list are the hood, roof, and the four doors. The thing I “do” to the items is paint a star.  In Ruby, the “do something” is a set of instructions called a “block.”  We apply the instructions, or block, to each item.  The difference between .map and .each is what is returned.</p>
+
+<p>Here is Ruby code applied the car examples:<br>
+In English:<br>
+“Car” is the name of a collection of parts.  These parts are hood, roof, etc.<br>
+In Ruby:<br>
+car = [hood, roof, driver_door, passenger_door, left_rear_door, right_rear_door]</p>
+
+<p>In English: On each of the car parts on the car, paint a star on it.<br>
+Translation: car.each {|car_part| paint a star on the car_part}<br>
+#Her car is returned the way it was when she gave it to me.</p>
+
+<p>Using .map performs the same operation, but something different is returned:</p>
+<p>car.map{|car_part| paint a star on the car_part}<br>
+#she gets a “copy” of her car with the changes made to it.</p>
+
+<p>car.map!{|car_part| paint a star on the car_part}
+#she gets her car back with the changes applied to it.</p>
+
+<p>Generalized:
+array.map {block}  This applies the block to all items in the array.<br>
+list = Array.new<br>
+list.map {|item| do something to that item}</p>
+
+<p>A more mathematical example:<br>
+[1, 2, 3].map{ |x| x + 1}<br>
+returns: [2, 3, 4]</p>
+
+<p>In summary, .map is a method of applying instructions to each item in a list and getting a new list with the applied changes.  .map! applies the changes to the items on the original list permanently (also called destructively, because it replaces or effectively “destroys” the original list.</p>
+			
+		</section>
+			<nav>
+				<ul>
+					<li><a href="blog-index.html">Blog Home</a></li>
+					<li><a href="t1-git-blog.html">0.1 Wrapping My Head around Git</a></li>
+					<li><a href="css-concepts.html"> 0.2 Framing Containers on Webpages</a></li>
+					<li><a href="arrays-hashes.html">0.3 There's lists and then there's lists</a></li>
+					<li><a href="childdev-tech.html">Child Development and Tech</a></li>
+					<li><a href="enumerable-methods.html">0.4 Mapping the Enumerable "map"</a></li>
+					<li><a href="#">Blog 5</a></li>
+					<li><a href="#">Blog 6</a></li>
+					<li><a href="#">Blog 7</a></li>
+				</ul>
+			</nav>
+		
+		<footer>Copyright all rights reserved</footer>
+	</body>
+</html>

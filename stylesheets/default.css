@@ -84,13 +84,21 @@ nav ul li {
 }
 footer {
 	bottom: 0;
-    display: inline;
+    display: block;
     position: fixed;
-    height: 80px;
+    height: 100px;
     background-color: #4fa46b;
     width: 100%;
+    padding:20px, auto;
 }
-
+footer ul{
+    display:block;
+}
+footer ul li img{
+    display: inline-block;
+    max-height:50;
+    width:50;
+}
 h6:first-child {
 	font-size: large;
     margin: 5px;

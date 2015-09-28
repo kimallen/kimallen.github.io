@@ -5,9 +5,34 @@ html{
 header {
 
 	background-color: #572827;
-box-sizing: border-box;
+	box-sizing: border-box;
 	color: #a46b6a;
 	display:inline-block;
+}
+
+nav {
+	background-color: #a46b6a;
+	color: #572827;
+	border: 5px solid #4fa46b;
+	position: relative;
+	display: inline-block;
+	float:right;
+	width:180px;
+	margin:20px;
+	padding:20px;
+
+
+	}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+nav a:link {
+	color: #295739;
+}
+
+nav a:visited {
+	color:#74f09d;
 }
 /*#blog-header-image {
 	position:absolute;
@@ -23,26 +48,12 @@ h3 {
 	left: 15%;
 }
 section {
-		background-color: #a46b6a;
-	left:0;
-	height: auto;
-}
-nav {
 	background-color: #a46b6a;
-	color: #572827;
-	border: 5px solid #4fa46b;
-	position: relative;
-	display: inline-block;
-	float:right;
-	height: 365px;
-	}
-a:link {
-	color: #295739;
+	height: auto;
+	float:left;
+	
 }
 
-a:visited {
-	color:#74f09d;
-}
 
 
 footer {

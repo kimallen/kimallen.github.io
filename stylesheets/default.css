@@ -11,10 +11,13 @@ body {
 header {
 	background-color: #4fa46b;
     display: block;
-    border: 10px solid #572827;
-    position: fixed;
+    /*border: 10px solid #572827;*/
+    /*position: fixed;*/
     width: 100%;
     z-index: 1;
+}
+header a {
+    text-decoration: none;
 }
 #headshot {
 	position: absolute;
@@ -47,33 +50,32 @@ h3 {
 }
 section {
 	background-color: #74f09d;
-    display: inline-block;
+    display: block;
     height: 100%;
-    position: absolute;
     padding: 40px;
-    margin-left: 0;
-    margin-top: 20px;
-    margin-bottom: 90px;
+    margin: 30px;
+    margin-bottom: 130px;
     box-sizing: border-box;
-    right: 170px;
-    top: 140px;
 }
 nav {
 	background-color: #74f09d;
-    display: inline-block;
-    width: 150px;
-    height: 260px;
-    float: right;
-    position: relative;
-    border: 8px solid #572827;
-    margin-top: 20px;
-    padding-right: 50px;
-    margin-left: 10px;
-    padding-bottom: 20px;
+    display: block;
     box-sizing: border-box;
-    top: 140px;
 }
-nav ul {
+nav table {
+    margin: auto;
+    padding: 20px 3em;
+    font-size: x-large;
+    width: 100%;
+}
+
+nav td {
+text-align: center;
+}
+nav a {
+    text-decoration: none;
+}
+/*nav ul {
 	list-style-type: none;
     position: absolute;
 }
@@ -81,7 +83,7 @@ nav ul li {
 	border: 2px solid #a46b6a;
     margin: 10px auto;
     padding: 5px;
-}
+}*/
 footer {
 	bottom: 0;
     display: block;
@@ -95,7 +97,7 @@ footer ul{
     display:inline-block;
     height:50px;
 }
-table {
+footer table {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;

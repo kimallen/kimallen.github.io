@@ -1,20 +1,24 @@
 html {
 	border-color: #572827;
     margin: 0px;
-    background-color: #295739;
+    /*background-color: #295739;*/
 }
 body {
-	border-color: #572827;
-    margin: 0px;
-    background-color: #295739;
+	/*border-color: #572827;*/
+    padding: 20px;
+    /*background-color: #295739;*/
+    background-image: url(../imgs/beach_stones.jpg);
 }
 header {
 	background-color: #4fa46b;
-    display: block;
+    /*display: block;*/
     /*border: 10px solid #572827;*/
     /*position: fixed;*/
     width: 100%;
     z-index: 1;
+    margin: 20px, 20px, 0px, 20px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 header a {
     text-decoration: none;
@@ -49,18 +53,19 @@ h3 {
     margin: auto;
 }
 section {
-	background-color: #74f09d;
+	background-color: #F2F2B5;
     display: block;
     height: 100%;
     padding: 40px;
     margin: 30px;
     margin-bottom: 130px;
-    box-sizing: border-box;
+
+    /*box-sizing: border-box;*/
 }
 nav {
 	background-color: #74f09d;
     display: block;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 nav table {
     margin: auto;
@@ -87,11 +92,14 @@ nav ul li {
 footer {
 	bottom: 0;
     display: block;
-    position: fixed;
+    /*position: fixed;*/
     height: 100px;
     background-color: #4fa46b;
     width: 100%;
     padding:20px, auto;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    /*left-border: 0;*/
 }
 footer ul{
     display:inline-block;

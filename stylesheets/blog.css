@@ -2,25 +2,31 @@
 html{
 	background-color: white;
 }
-header {
+#container{
+	margin-left: auto;
+	margin-right:auto;
+	background-image:;
+}
 
+header {
 	background-color: #572827;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	color: #a46b6a;
-	display:inline-block;
+	display:static;
+	margin-bottom: 20px;
+	height:100px;
 }
 
 nav {
 	background-color: #a46b6a;
 	color: #572827;
 	border: 5px solid #4fa46b;
-	position: relative;
-	display: inline-block;
-	float:right;
-	width:180px;
-	margin:20px;
+	float: right;
 	padding:20px;
-
+	display:static;
+	width: 100px;
+	margin: 10px;
+	margin-right: 30px;
 
 	}
 nav ul {
@@ -30,9 +36,16 @@ nav ul {
 nav a:link {
 	color: #295739;
 }
+nav a:hover{
+
+}
 
 nav a:visited {
 	color:#74f09d;
+}
+
+nav li {
+	padding:5px;
 }
 /*#blog-header-image {
 	position:absolute;
@@ -49,15 +62,16 @@ h3 {
 }
 section {
 	background-color: #a46b6a;
-	height: auto;
-	float:left;
-	
+	display:static;
+	margin-right: 200px;
 }
 
 
 
 footer {
-
+	position:static;
 	padding 20px;
 	height: 60px;
+	clear:right;
+	margin-top: 20px;
 }

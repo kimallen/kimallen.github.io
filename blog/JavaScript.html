@@ -35,15 +35,15 @@
 
 <p>In Javascript, it's all simplified into global and local variables.  JS global variables are similar in character to the ones Ruby in that they can be seen everywhere by everyone within the Javascript world.  In Ruby, there are a number of specifically defined, built-in global variables (they begin with $).  In JS, anything defined as a variable outside of a function is global.  All local variables are initiated with "var."  Local variables in JS I think of like genes passed on from grandparents to  parents to children.  Parents can pass down their genetic characteristics to their children, but the children can't pass them up to their parents.  Similarly, a variable created in a parent function can be used by a child function within it, but a variable created, or defined, in the child function can't be seen by the adult.  Here's an example:</p>
 
-<pre><code>function seeing(){
+<pre><code>function outer(){
     var scoping = "binos"; 
-    //seeing does not recognize listening
-     function hearing(){
-          //I can recognize scoping 
-               var listening = ("I am using" +  scoping + " and headphones"); 
+    //outer does not recognize the variable listening
+     function inner(){
+        //I can recognize outer 
+        var listening = ("I am using" +  scoping + " and headphones"); 
 }</code></pre>
 
-<p>However, if I reinitialize scoping (with var scoping) in the child function hearing, seeing no longer recognizes it because it is a new variable.</p>
+<p>However, if I reinitialize scoping (with var scoping) in the child function inner, outer no longer recognizes it because it is a new variable.</p>
 
 <p>In Ruby, to use a variable from outside a method inside a method, it has to specifically be passed into it through the methods arguments, but in JavaScript, it's an open (albeit one-way) doorway.  Similarly, this degree of liberalness applies in Javascript to functions.  If you want to call a function within another function, you simply have to write it in there (as long as it can recognize the variables within it).</p>
 
@@ -58,6 +58,7 @@ passer = second_method()
 first_method(passer)</code></pre>
 
 <p>#To use the second method within the first, you have to give it a variable name and pass it into the first method through the argument.</p>
+
 
 <p>In Javascript:</p>
 

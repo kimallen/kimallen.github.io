@@ -9,18 +9,18 @@ html{
 }
 
 header {
-	background-color: #572827;
+	background-color: rgba(59, 29, 13, 0.88);
 	/*box-sizing: border-box;*/
-	color: #a46b6a;
+	color: #D2691E;
 	display:static;
 	margin-bottom: 20px;
-	height:100px;
+	height:130px;
 }
 
 nav {
-	background-color: #a46b6a;
-	color: #572827;
-	border: 5px solid #4fa46b;
+	background-color: rgba(59, 29, 13, 0.88);
+	color: #D2691E;
+	border: 5px solid #D2691E;
 	float: right;
 	padding:20px;
 	display:static;
@@ -34,14 +34,14 @@ nav ul {
 	padding: 0;
 }
 nav a:link {
-	color: #295739;
+	color: #7FFFD4;
 }
 nav a:hover{
 
 }
 
 nav a:visited {
-	color:#74f09d;
+	color:#83A3E6;
 }
 
 nav li {
@@ -60,10 +60,15 @@ h1 {
 h3 {
 	left: 15%;
 }
+
+h2 {
+	font-size: 50px;
+}
 section {
-	background-color: #a46b6a;
+	background-color: #B0E0E6;
 	display:static;
 	margin-right: 200px;
+	font-size: 20px;
 }
 
 

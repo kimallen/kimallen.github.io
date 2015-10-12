@@ -7,7 +7,7 @@ body {
     /*border-color: #572827;*/
     padding: 20px;
     /*background-color: #295739;*/
-    background-image: url(../imgs/beach_stones.jpg);
+    background-image: url(../imgs/stones.jpg);
 }
 header {
     background-color: #4fa46b;
@@ -85,6 +85,11 @@ nav a {
     display: inline-block;
     width: 200px;
     height:200px;
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid #365997;
+    border-radius:3em;
+
 }
 /*nav ul {
     list-style-type: none;

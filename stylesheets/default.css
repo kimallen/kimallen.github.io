@@ -1,16 +1,16 @@
 html {
-	border-color: #572827;
+    border-color: #572827;
     margin: 0px;
     /*background-color: #295739;*/
 }
 body {
-	/*border-color: #572827;*/
+    /*border-color: #572827;*/
     padding: 20px;
     /*background-color: #295739;*/
     background-image: url(../imgs/beach_stones.jpg);
 }
 header {
-	background-color: #4fa46b;
+    background-color: #4fa46b;
     /*display: block;*/
     /*border: 10px solid #572827;*/
     /*position: fixed;*/
@@ -24,7 +24,7 @@ header a {
     text-decoration: none;
 }
 #headshot {
-	position: absolute;
+    position: absolute;
     width: 12em;
     margin: 5px;
     height: 120px;
@@ -37,7 +37,7 @@ header a {
     height: 3em;
 }*/
 h1 {
-	font-size: 70px;
+    font-size: 70px;
     font-family: monospace;
     position: relative;
     display: block;
@@ -45,7 +45,7 @@ h1 {
     margin: auto;
 }
 h3 {
-	display: block;
+    display: block;
     font-size: 30px;
     position: relative;
     left: 45%;
@@ -53,7 +53,7 @@ h3 {
     margin: auto;
 }
 section {
-	background-color: #F2F2B5;
+    background-color: #F2F2B5;
     display: block;
     height: 100%;
     padding: 40px;
@@ -63,7 +63,7 @@ section {
     /*box-sizing: border-box;*/
 }
 nav {
-	background-color: #74f09d;
+    background-color: #74f09d;
     display: block;
     /*box-sizing: border-box;*/
 }
@@ -80,17 +80,23 @@ text-align: center;
 nav a {
     text-decoration: none;
 }
+.project{
+    background-color: #9DB4DE;
+    display: inline-block;
+    width: 200px;
+    height:200px;
+}
 /*nav ul {
-	list-style-type: none;
+    list-style-type: none;
     position: absolute;
 }
 nav ul li {
-	border: 2px solid #a46b6a;
+    border: 2px solid #a46b6a;
     margin: 10px auto;
     padding: 5px;
 }*/
 footer {
-	bottom: 0;
+    bottom: 0;
     display: block;
     /*position: fixed;*/
     height: 100px;
@@ -126,6 +132,6 @@ table img {
     width:50;
 }*/
 h6:first-child {
-	font-size: large;
+    font-size: large;
     margin: 5px;
-}
+}*/

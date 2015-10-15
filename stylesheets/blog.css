@@ -75,7 +75,7 @@ section {
 
 footer {
 	position:static;
-	padding: 20px;
+	padding: 20px, auto;
 	height: 60px;
 	clear:right;
 	margin-top: 20px;

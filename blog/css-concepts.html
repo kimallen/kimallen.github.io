@@ -30,18 +30,18 @@
 			<H2>0.2: Framing Containers on Webpages--huh?</H2>
 			<h4>September 6, 2015</h4>
 			<p>It is important to know when moving elements around on a web page that they each consist of boundaries that you may or may not see.  What do I mean by element?  Well, if you think of a web page as a container, there are lots of smaller containers inside of it.  Some rest side by side and others overlap.  Some examples of elements are the navigation bar (the place where you can choose what page you want to see such as "about," "programs," "contact"), the header (usually at the top of the page where you find the logo or name of the site), and the main section where you find most of the content.</p>
-			<p>In CSS, the way web pages are given their good looks (or not), each element, or container, can have boundaries that are called the margin, the padding, border, and the margin.  Think about an element as a framed picture that you put on the wall.  First, you have the picture itself.  This is the content of the element, the substance inside of the container.  Then there is the matte between the picture and the wooden frame.  This is called the "padding."  Moving outward from there, you have the frame itself.  You may place this framed picture amidst other framed pictures, but you'll likely place it a minimum distance between this frame and the next one. This space is called the margin.  The margin extends beyond the border. </p>
-			<p>Where the variation comes in is in how wide each of those spaces is, their color, style, and whether they exist at all.  Just like a frame can have various designs on it or be just straight and plain, a border could be solid, dashed, or dotted, among other options.    You know those family photo frames that hold multiple photos?  You could likewise have an element that contains several other elements.  How about those sleek "frames" that clamp the photo between the backing and the glass with no actual frame at all?  Your element does not need to have a border either and in that case it would be lacking any padding, or matte.  And if you wanted to butt several of those frames up next to each other, you could remove any kind of margin, although it'd probably look a little funny and crowded, but that just might be the look you're going for, who knows.</p>
-			<p>For the last example your css could look like this:</p>
-			<p>
-			element { border: 0; margin:0; padding:0;}</p>
+			<p>In CSS, the way web pages are given their good looks (or not), each element, or container, can have boundaries that are called the margin, padding, and border.  Think about an element as a framed picture that you put on the wall.  First, you have the picture itself.  This is the content of the element, the substance inside of the container.  Then there is the matte between the picture and the wooden frame.  This is called the "padding."  Moving outward from there and you have the frame itself.  You may place this framed picture amidst other framed pictures, but you'll likely place it a minimum distance between this frame and the next one. This space is called the margin.  The margin extends beyond the border. </p>
+			<p>Where the variation comes in is in the width of each of those spaces, their color, style, and whether they exist at all.  Just like a frame can have various designs on it or be just straight and plain, a border could be solid, dashed, or dotted, among other options. You know those family photo frames that hold multiple photos?  You could likewise have an element that contains several other elements.  How about those sleek "frames" that clamp the photo between the backing and the glass with no actual frame at all?  Your element does not need to have a border either and in that case your photo would also lack any padding, or matte.  And if you wanted to butt several of those frames up next to each other, you could remove any kind of margin, although it'd probably look a little funny and crowded, but that just might be the look you're going for, who knows.</p>
+			<p>The CSS for the borderless, marginless, matte-free frame would look like this:</p>
+			<code>
+			element { border: 0; margin:0; padding:0;}</code>
 			<p>Each of those numbers could be adjusted to different numbers of pixels (px), or units of space on a screen.  You can also adjust the sides to have different sized borders, etc.:</p>
-			<p>element { border-top:5px; border-right: 10px; border-bottom: 5; border-left:10px}</p>
+			<code>element { border-top:5px; border-right: 10px; border-bottom: 5; border-left:10px}</code>
 			<p>So, if you find yourself trying to create the visual design of a webpage, keep in mind the different boundaries that surround your elements.  You can adjust them and style them to fit the purposes of your website.</p>
 			
 		</section>
 		
-		<footer>Copyright 2015, all rights reserved</footer>
+		<footer>Copyright 2015</footer>
 	</body>
 </html>
 

@@ -58,7 +58,7 @@ section {
     height: 100%;
     padding: 40px;
     margin: 30px;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 
     /*box-sizing: border-box;*/
 }
@@ -139,4 +139,4 @@ table img {
 h6:first-child {
     font-size: large;
     margin: 5px;
-}*/
+}

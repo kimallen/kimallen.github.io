@@ -28,41 +28,43 @@
 		</nav>
 		<section>
 			<H2>Mapping out the Enumerable Module's Method "map"</H2>
-			<h4>September 20, 2015</h4>
-			<p>Say I borrow your car.  I decide to spruce it up so I put a star on the hood, a star on the roof, and a star on each door.  When I return it to you, I can either return it the way I got it (each), return the same car to you with the adjustments (map!) or decide not to change your car at all but get a duplicate car and paint the stars on that car and return the new car to you (map).</p>
+			<h4><time datetime="2015-09-20">September 20, 2015</time></h4>
+			<p>Say that ten times fast. Now say I borrow your car.  I decide to spruce it up so I put a star on the hood, a star on the roof, and a star on each door.  When I return it to you, I can either return it the way I got it (each), return the same car to you with the adjustments (map!) or decide not to change your car at all but get a duplicate car and paint the stars on that car and return the new car to you (map).</p>
 
-<p>In Ruby, .map and .each are both methods to go through each item in a list (an array) and do something to it.   The list in the example is called “car,” and the items in the list are the hood, roof, and the four doors. The thing I “do” to the items is paint a star.  In Ruby, the “do something” is a set of instructions called a “block.”  We apply the instructions, or block, to each item.  The difference between .map and .each is what is returned.</p>
+			<p>In Ruby, .map and .each are both methods to go through each item in a list (an array) and do something to it.   The list in the example is called “car,” and the items in the list are the hood, roof, and the four doors. The thing I “do” to the items is paint a star.  In Ruby, the “do something” is a set of instructions called a “block.”  We apply the instructions, or block, to each item.  The difference between .map and .each is what is returned.</p>
 
-<p>Here is Ruby code applied the car examples:<br>
-In English:<br>
-“Car” is the name of a collection of parts.  These parts are hood, roof, etc.<br>
-In Ruby:<br>
-car = [hood, roof, driver_door, passenger_door, left_rear_door, right_rear_door]</p>
+			<p>Here is Ruby code applied to the car examples:<br>
+			In English:<br>
+			“Car” is the name of a collection of parts.  These parts are the hood, roof, and doors.<br>
+			In Ruby:<br>
+			<code>car = [hood, roof, driver_door, passenger_door, left_rear_door, right_rear_door]</code>
 
-<p>In English: On each of the car parts on the car, paint a star on it.<br>
-Translation: car.each {|car_part| paint a star on the car_part}<br>
-#Her car is returned the way it was when she gave it to me.</p>
+			<p>In English: On each of the car parts on the car, paint a star on it.</p>
+			<p>Ruby translation:</p>
+			<code>car.each {|car_part| paint a star on the car_part}</code>
+			<p>Her car is returned the way it was when she gave it to me. The original array is returned.</p>
 
-<p>Using .map performs the same operation, but something different is returned:</p>
-<p>car.map{|car_part| paint a star on the car_part}<br>
-#she gets a “copy” of her car with the changes made to it.</p>
+			<p>Using .map performs the same operation, but something different is returned:</p>
+			<p><code>car.map{|car_part| paint a star on the car_part}</code>
+			<p>She gets a “copy” of her car with the changes made to it.  She gets a new array and the original array is intact.</p>
 
-<p>car.map!{|car_part| paint a star on the car_part}
-#she gets her car back with the changes applied to it.</p>
+			<code>car.map!{|car_part| paint a star on the car_part}</code>
+			<p>she gets her car back with the changes applied to it.  She gets the original array changed.</p>
 
-<p>Generalized:
-array.map {block}  This applies the block to all items in the array.<br>
-list = Array.new<br>
-list.map {|item| do something to that item}</p>
+			<p>Generalized:</p>
+			<code>array.map {block} </code> This applies the block to all items in the array.<br>
+			<code>list = Array.new<br>
+			list.map {|item| do something to that item}</code>
 
-<p>A more mathematical example:<br>
-[1, 2, 3].map{ |x| x + 1}<br>
-returns: [2, 3, 4]</p>
+			<p>A more mathematical example:<br>
+			[1, 2, 3].map{ |x| x + 1}<br>
+			returns: [2, 3, 4]</p>
 
-<p>In summary, .map is a method of applying instructions to each item in a list and getting a new list with the applied changes.  .map! applies the changes to the items on the original list permanently (also called destructively, because it replaces or effectively “destroys” the original list.</p>
-			
+			<p>In summary, .map is a method of applying instructions to each item in a list and getting a new list with the applied changes.  .map! applies the changes to the items on the original list permanently (also called destructively, because it replaces or effectively “destroys” the original list). .each performs the block's instructions, but returns the original unchanged array.</p>
+						
 		</section>
 		
-		<footer>Copyright all rights reserved</footer>
+		<footer><h6>I have not failed. I've just found 10,000 ways that won't work. -- Thomas Edison</h6>
+		</footer>
 	</body>
 </html>

@@ -10,12 +10,11 @@ body {
     background-image: url(../imgs/stones.jpg);
 }
 header {
-    background-color: #4fa46b;
+    background-color: rgba(79, 164, 107, 0.92);
     /*display: block;*/
     /*border: 10px solid #572827;*/
     /*position: fixed;*/
     width: 100%;
-    z-index: 1;
     margin: 20px, 20px, 0px, 20px;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
@@ -105,9 +104,8 @@ footer {
     display: block;
     /*position: fixed;*/
     height: 100px;
-    background-color: #4fa46b;
-    width: 100%;
-    padding:20px, auto;
+    background-color: rgba(79, 164, 107, 0.92);
+    padding:20px;
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
     /*left-border: 0;*/
@@ -136,7 +134,7 @@ table img {
     max-height:50;
     width:50;
 }*/
-h6:first-child {
+footer h6:first-child {
     font-size: large;
     margin: 5px;
 }

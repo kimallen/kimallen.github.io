@@ -28,53 +28,58 @@
 		</nav>
 		<section>
 			<H2>0.6: Scope It Out! Ruby v. Javascript</H2>
-			<h4>October 4, 2015</h4>
+			<h4><time datetime="2015-10-04">October 4, 2015</time></h4>
 			<p>One of the big challenges for me in this first week learning Javascript, having had vastly more experience in Ruby (3 weeks), was understanding where variables and functions could be seen within a program and by whom.  This visibility, or reach, is called "scope."  It's like a telescope that can see what is in it's range, but not behind or to its sides. </p>
 
-<p>In Ruby, the scope of variables is kind of like an office building. Large rooms are like classes, the cubicles within them are methods.  A full moon on a clear night that everyone can see if they look out their window (they work hard into the evening) is a global variable.  Global variables are defined throughout the whole wide world of Ruby.  And then there are the local variables, seen and recognized within their own methods, but not outside.  Kind of like whatever you've got going on in your little cubicle is your business.  Unless you decide you want to share with every other cubicle in the office, in which case you might stand it up tall as an instance variable that can be seen between methods (specially marked with @).  Then there's class variables that can be seen by everyone in that office space (and starts with @@), or class, but not the next office over.</p>
+			<p>In Ruby, the scope of variables is kind of like an office building. Large rooms are like classes, the cubicles within them are methods.  A full moon on a clear night that everyone can see if they look out their window (they work hard into the evening) is a global variable.  Global variables are defined throughout the whole wide world of Ruby.  And then there are the local variables, seen and recognized within their own methods, but not outside.  Kind of like whatever you've got going on in your little cubicle is your business.  Unless you decide you want to share with every other cubicle in the office, in which case you might stand it up tall as an instance variable that can be seen between methods (specially marked with @).  Then there's class variables that can be seen by everyone in that office space (and starts with @@), or class, but not the next office over.</p>
 
-<p>In Javascript, it's all simplified into global and local variables.  JS global variables are similar in character to the ones Ruby in that they can be seen everywhere by everyone within the Javascript world.  In Ruby, there are a number of specifically defined, built-in global variables (they begin with $).  In JS, anything defined as a variable outside of a function is global.  All local variables are initiated with "var."  Local variables in JS I think of like genes passed on from grandparents to  parents to children.  Parents can pass down their genetic characteristics to their children, but the children can't pass them up to their parents.  Similarly, a variable created in a parent function can be used by a child function within it, but a variable created, or defined, in the child function can't be seen by the adult.  Here's an example:</p>
+			<p>In Javascript, it's all simplified into global and local variables.  JS global variables are similar in character to the ones inRuby in that they can be seen everywhere by everyone within the Javascript world.  In Ruby, there are a number of specifically defined, built-in global variables (they begin with $).  In JS, anything defined as a variable outside of a function is global.  All local variables are initiated with "var."  Local variables in JS I think of like genes passed on from grandparents to  parents to children.  Parents can pass down their genetic characteristics to their children, but the children can't pass them up to their parents.  Similarly, a variable created in a parent function can be used by a child function within it, but a variable created, or defined, in the child function can't be seen by the adult.  Here's an example:</p>
 
-<pre><code>function outer(){
-    var scoping = "binos"; 
-    //outer does not recognize the variable listening
-     function inner(){
-        //I can recognize outer 
-        var listening = ("I am using" +  scoping + " and headphones"); 
-}</code></pre>
+			<code>function outer(){<br>
+			    var scoping = "binos"; <br>
+			    //outer does not recognize the variable listening<br>
+			     function inner(){<br>
+			        //I can recognize outer <br>
+			        var listening = ("I am using" +  scoping + " and headphones"); <br>
+			}<br></code>
 
-<p>However, if I reinitialize scoping (with var scoping) in the child function inner, outer no longer recognizes it because it is a new variable.</p>
+			<p>However, if I reinitialize 'scoping' (with 'var scoping') in the child function 'inner,' 'outer' no longer recognizes it because it is a new variable.</p>
 
-<p>In Ruby, to use a variable from outside a method inside a method, it has to specifically be passed into it through the methods arguments, but in JavaScript, it's an open (albeit one-way) doorway.  Similarly, this degree of liberalness applies in Javascript to functions.  If you want to call a function within another function, you simply have to write it in there (as long as it can recognize the variables within it).</p>
+			<p>In Ruby, to use a variable from outside a method inside a method, it has to specifically be passed into it through the methods arguments, but in JavaScript, it's an open (albeit one-way) doorway.  Similarly, this degree of liberalness applies in Javascript to functions.  If you want to call a function within another function, you simply have to write it in there (as long as it can recognize the variables within it).</p>
 
-<p>In Ruby:</p>
+			<p>In Ruby:</p>
 
 <pre><code>def first_method(other_method)
-do something with other_method
+	do something with other_method
 end
+
 def second_method()
+	do something else
 end
+
 passer = second_method()
 first_method(passer)</code></pre>
 
-<p>#To use the second method within the first, you have to give it a variable name and pass it into the first method through the argument.</p>
+			<p>#To use the second method within the first, you have to give it a variable name and pass it into the first method through the argument.</p>
 
 
-<p>In Javascript:</p>
+			<p>In Javascript:</p>
 
-<pre><code>function firstFunction(){
+<code>function firstFunction(){
     secondFunction();
-}
-function secondFunction(){
-     //doing something special
-}</code></pre>
+}</code>
 
-<p>Overall, the flexibility of Javascript makes usage of variables easier, though when they lack the specific character notations that Ruby uses that tag the scope (like @, @@, and $), identifying their scope can be more of a challenge.
-</p>
+<code>function secondFunction(){
+     //doing something special
+}</code>
+
+			<p>Overall, the flexibility of Javascript makes usage of variables easier, though when they lack the specific character notations that Ruby uses that tag the scope (like @, @@, and $), identifying their scope can be more of a challenge.
+			</p>
 			
 		</section>
 			
 		
-		<footer>Copyright 2015</footer>
+		<footer><h6>I have not failed. I've just found 10,000 ways that won't work. -- Thomas Edison</h6>
+		</footer>
 	</body>
 </html>

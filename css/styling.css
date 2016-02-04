@@ -5,3 +5,9 @@
 #less-about-button {
 	display: none;
 }
+
+#contactForm {
+	display: none;
+	border: 1px solid gray;
+	padding: 4px;
+}

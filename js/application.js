@@ -2,12 +2,12 @@ $(document).ready(function(){
 	showMore()
 	showLess()
 
-	// $("#contactForm").submit(function(event){
-	//     // cancels the form submission
-	//     event.preventDefault();
-	//     console.log("inside contactForm")
-	//     submitForm();
-	// });
+	$("#contactForm").submit(function(event){
+	    // cancels the form submission
+	    event.preventDefault();
+	    console.log("inside contactForm")
+	    submitForm();
+	});
 	mailFormToggle()
 })//end doc ready
 
@@ -38,25 +38,25 @@ function showLess(){
 }
 
 
-// function submitForm(){
-// 	console.log("inside submitForm")
-//     // Initiate Variables With Form Content
-//     var name = $("#name").val();
-//     var email = $("#email").val();
-//     var message = $("#message").val();
+function submitForm(){
+	console.log("inside submitForm")
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
  
-//     $.ajax({
-//         type: "POST",
-//         url: "http://formspree.io/fakimallen@email.com",
-//         data: "name=" + name + "&email=" + email + "&message=" + message,
-//         success : function(text){
-//             if (text == "success"){
-//                 formSuccess();
-//             }
-//         }
-//     });
-// }
+    $.ajax({
+        type: "POST",
+        url: "http://formspree.io/fakimallen@email.com",
+        data: "name=" + name + "&email=" + email + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            }
+        }
+    });
+}
 
-// function formSuccess(){
-//     $( "#msgSubmit" ).removeClass( "hidden" );
-// }
+function formSuccess(){
+    $( "#msgSubmit" ).removeClass( "hidden" );
+}

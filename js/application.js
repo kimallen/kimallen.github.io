@@ -8,8 +8,15 @@ $(document).ready(function(){
 	//     console.log("inside contactForm")
 	//     submitForm();
 	// });
+	mailFormToggle()
 })//end doc ready
 
+	function mailFormToggle(){
+		$('#contact').on('click', '#envelope', function(e){
+			e.preventDefault();
+			$('#contactForm').toggle()
+		})
+	}
 function showMore(){
 	$('section#about').on('click', '#more-about-button', function(e){
 		e.preventDefault();

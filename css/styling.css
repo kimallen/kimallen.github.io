@@ -7,7 +7,12 @@
 }
 
 #contactForm {
-	display: none;
-	border: 1px solid gray;
+	
 	padding: 4px;
+}
+
+#form-container {
+	display: none;
+	padding: 4px;
+	border: 1px solid gray;
 }

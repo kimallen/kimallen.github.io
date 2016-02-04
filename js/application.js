@@ -2,19 +2,19 @@ $(document).ready(function(){
 	showMore()
 	showLess()
 
-	$("#contactForm").submit(function(event){
-	    // cancels the form submission
-	    event.preventDefault();
-	    console.log("inside contactForm")
-	    submitForm();
-	});
+	// $("#contactForm").submit(function(event){
+	//     // cancels the form submission
+	//     event.preventDefault();
+	//     console.log("inside contactForm")
+	//     submitForm();
+	// });
 	mailFormToggle()
 })//end doc ready
 
 	function mailFormToggle(){
 		$('#contact').on('click', '#envelope', function(e){
 			e.preventDefault();
-			$('#contactForm').toggle()
+			$('#form-container').toggle()
 		})
 	}
 function showMore(){

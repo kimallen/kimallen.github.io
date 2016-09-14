@@ -17,15 +17,15 @@ $(document).ready(function(){
 			$('#form-container').toggle()
 		})
 	}
-function showMore(){
-	$('section#about').on('click', '#more-about-button', function(e){
-		e.preventDefault();
-		$('#more-about-button').hide()
-		$('#more-about').show()
-		$('#less-about-button').show()
+	function showMore(){
+		$('section#about').on('click', '#more-about-button', function(e){
+			e.preventDefault();
+			$('#more-about-button').hide()
+			$('#more-about').show()
+			$('#less-about-button').show()
 
-	})
-}
+		})
+	}
 
 function showLess(){
 	$('section#about').on('click', '#less-about-button', function(e){
@@ -39,7 +39,6 @@ function showLess(){
 
 
 function submitForm(){
-	console.log("inside submitForm")
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
